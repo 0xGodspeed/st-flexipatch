@@ -3,7 +3,6 @@
 .POSIX:
 
 include config.mk
-SIXEL_C = sixel.c sixel_hls.c 
  
 SRC = st.c x.c $(LIGATURES_C) $(SIXEL_C)
 OBJ = $(SRC:.c=.o)
