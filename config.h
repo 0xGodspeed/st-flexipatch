@@ -5,7 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+/* static char *font = "JetBrainsMono Nerd Font:pixelsize=12:antialias=true:autohint=true"; */
+static char *font = "mononoki Nerd Font:pixelsize=12:antialias=true:autohint=true";
 #if FONT2_PATCH
 /* Spare fonts */
 static char *font2[] = {
@@ -19,7 +20,7 @@ static char *font2[] = {
  *             0 = no border, 100 = border width is same as cell width */
 int borderperc = 20;
 #else
-static int borderpx = 2;
+static int borderpx = 1;
 #endif // RELATIVEBORDER_PATCH
 
 #if OPENURLONCLICK_PATCH
@@ -89,9 +90,7 @@ static uint su_timeout = 200;
 /*
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
  * attribute.
- */
-static unsigned int blinktimeout = 800;
-
+ */ static unsigned int blinktimeout = 800;
 /*
  * thickness of underline and bar cursors
  */
